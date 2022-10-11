@@ -1,0 +1,250 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff;
+}
+
+.navbar-brand {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-brand:hover {
+    color: black;
+}
+
+.line1 {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+/* Body */
+.body img {
+    width: 300px;
+    height: 300px;
+}
+
+.preview p {
+    text-align: center;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 44px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 23px;
+}
+
+/* Color pick */
+.nav {
+    display: inline-flex;
+    list-style: none;
+
+}
+
+.link {
+    border-radius: 50%;
+    display: block;
+    margin: 5px;
+    padding: 18px 18px;
+    text-decoration: none;
+    color: transparent;
+}
+
+.link.active {
+    border: 4px solid rgb(143, 143, 143);
+}
+
+.color-item {
+    padding-top: 31px;
+}
+
+/* Upload */
+.image-container {
+    width: 50%;
+    margin: 0 auto 30px auto;
+}
+
+.image-container img {
+    display: block;
+    position: relative;
+    max-width: 150px;
+    max-height: 150px;
+    margin: auto;
+}
+
+figcaption {
+    margin: 20px 0 30px 0;
+    text-align: center;
+    color: #2a292a;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label {
+    display: block;
+    position: relative;
+    background-color: black;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    width: 214px;
+    padding: 15px 0;
+    margin: auto;
+    cursor: pointer;
+}
+
+.btn-dark {
+    border-radius: 0%;
+    font-size: 13px;
+}
+
+/* Order action */
+.order-action {
+    border-radius: 0%;
+    padding: 10px 100px;
+    font-size: 18px;
+}
+
+/* Product Detail */
+.product-detail ul li {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+/* Available Size */
+.available-size ul li {
+    margin-left: 20px;
+}
+
+/* Contact */
+.contact {
+    background-color: #151515;
+    padding-bottom: 100px;
+    margin-top: 50px;
+}
+
+.contact h3 {
+    color: #4D8B55;
+    font-weight: 900;
+    font-size: 22px;
+    margin-top: 95px;
+}
+
+.contact p {
+    font-size: 14px;
+    color: #bbb;
+    font-weight: 700;
+}
+
+.contact i {
+    color: #4D8B55;
+}
+
+.contact a {
+    text-decoration: none;
+}
+
+.contact-us:hover {
+    opacity: 0.8;
+}
+
+/* Follow Us */
+.wrapper {
+    display: inline-flex;
+    margin-top: 10px;
+}
+
+.wrapper-facebook {
+    margin-left: -12px;
+}
+
+.wrapper .icon {
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.wrapper .icon span {
+    height: 40px;
+    width: 40px;
+    display: block;
+    background-color: #4D8B55;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    text-align: center;
+}
+
+.wrapper .icon span i {
+    line-height: 40px;
+    color: #000;
+}
+
+.wrapper .facebook:hover span,
+.wrapper .instagram:hover span,
+.wrapper .linkedin:hover span,
+.wrapper .twitter:hover span {
+    background-color: #000;
+}
+
+.wrapper .facebook:hover span i,
+.wrapper .instagram:hover span i,
+.wrapper .linkedin:hover span i,
+.wrapper .twitter:hover span i {
+    color: #4D8B55;
+}
+
+/* Mobile Version */
+@media (max-width: 767px) {
+    .contact {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .wrapper-facebook {
+        margin-left: -10px;
+    }
+
+    .contact .col-md-4 {
+        margin-top: -30px;
+    }
+
+    .contact .address {
+        margin-top: -40px;
+    }
+
+    .contact .working-hours {
+        margin-top: -40px;
+    }
+}
+
+
+/* Tablet version */
+@media (min-width: 768px) {
+    .link {
+        padding: 13px;
+    }
+}
+
+/* Dekstop version */
+@media (min-width: 1200px) {
+    .link {
+        padding: 18px 18px;
+    }
+}

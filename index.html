@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- My Icons -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Custom Design Page</title>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar shadow-sm p-3 mb-4">
+        <div class="container container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="gallery/DiskSpace.id.png" alt="" width="141" height="30"
+                    class="d-inline-block align-text-top">
+                <img src="gallery/Line 1.png" alt="" class="line1">
+                Custom Design
+            </a>
+        </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Body -->
+    <div class="container body">
+        <div class="row">
+            <div class="col-12 col-md-7 shadow-sm pb-3 mb-5">
+                <div class="row preview text-center">
+                    <div class="col-md-6">
+                        <img src="gallery/detaildepan.png" alt="">
+                        <p>Front</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="gallery/detailbelakang.png" alt="">
+                        <p>Back</p>
+                    </div>
+                </div>
+                <div class="row mt-5 product-detail">
+                    <h3>Product Details</h3>
+                    <ul>
+                        <li>100% Cotton Material</li>
+                        <li>Semi Fitted</li>
+                        <li>Lightweight</li>
+                        <li>Moderate Price</li>
+                        <li>Available in three color options</li>
+                    </ul>
+                </div>
+                <div class="row available-size">
+                    <h3>Available Size</h3>
+                    <ul>
+                        <li><b>Adult:</b> M - XL</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 off-lg-1 text-center">
+                <h2 id="custom">Custom T-Shirt</h2>
+                <h3>Choose Color:</h3>
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                        <ul class="nav mb-4" id="color">
+                            <li><a href="#custom" class="link active shadow" value="white"
+                                    style="background: white;"></a>
+                            </li>
+                            <li><a href="#custom" class="link shadow" value="black" style="background: black;"></a></li>
+                            <li><a href="#custom" class="link shadow" value="navy" style="background: #000080;"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Design Upload -->
+                <figure class="image-container">
+                    <img id="chosen-image">
+                    <figcaption id="file-name"></figcaption>
+                </figure>
+
+                <input type="file" id="upload-button" accept="image/*">
+                <label for="upload-button">
+                    <i class="fas fa-upload"></i> &nbsp; Upload Your Design
+                </label>
+                <!-- Akhir Upload Design -->
+
+                <div class="row flex-justify-content-between">
+                    <div class="col text-start mt-5">
+                        <h3>Choose Size</h3>
+                        <select class="form-select form-select-sm" id="size" aria-label=".form-select-sm example"
+                            style="width: 120px;">
+                            <option selected>Size</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+                    <div class="col text-end" style="margin-top: 93px;">
+                        <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Detailing
+                            Size</button>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class=" modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Spesification Product
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="row" style="margin-top: -50px;">
+                                                <div class="col-md-6 .col-12 sizeWidth">
+                                                    <img src="gallery/sizewidth.png" alt="">
+                                                </div>
+                                                <div class="col-md-6 .col-12 sizeLength">
+                                                    <img src="gallery/sizelength.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 style="font-size: 18px;">Body Width</h3>
+                                            <p>Lay clothes evenly. 2cm below the sleeves, measure the garment at
+                                                the chest.</p>
+                                            <h3 style="color: #73cd2d; font-size: 18px;">Body Length</h3>
+                                            <p>Measure from the center back neckline seam straight down to the
+                                                bottom of the front hem.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <h3 style="font-size: 18px; margin-top: 20px;">Size
+                                            Measurements</h3>
+                                        <table class="table table-dark table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Size</th>
+                                                    <th scope="col">Width</th>
+                                                    <th scope="col">Length</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">M</th>
+                                                    <td>52 cm</td>
+                                                    <td>72 cm</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">L</th>
+                                                    <td>54 cm</td>
+                                                    <td>74 cm</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">XL</th>
+                                                    <td>56 cm</td>
+                                                    <td>76 cm</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-4">
+                <div class="row mt-3">
+                    <dt class="col-8 text-start">
+                        <h3>Estimated Total</h2>
+                    </dt>
+                    <dl class="col-4 text-end fw-bold fs-6">Rp75.000,00</dl>
+                </div>
+                <button type="submit" class="btn btn-dark order-action mt-4 mb-5">
+                    <i class="fas fa-shopping-cart" style="margin-right: 15px;"></i>
+                    Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Akhir Body -->
+
+    <!-- Contact -->
+    <div class="contact" id="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>DiskSpace.id</h3>
+                    <p style="margin-right: 10%; margin-top: 25px;">Our Company is made up of a group of highly skilled
+                        and
+                        professionals who pays
+                        a lot of attention to small
+                        details.</p>
+                    <div class="wrapper wrapper-facebook">
+                        <div class="icon facebook">
+                            <span><a href="#" target="blank"><i class="fa-brands fa-facebook-f fa-lg"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="icon instagram">
+                            <span><a href="https://www.instagram.com/afifhusnih" target="blank"><i
+                                        class="fa-brands fa-instagram fa-lg"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="icon linkedin">
+                            <span><a href="#" target="blank"><i class="fa-brands fa-linkedin fa-lg"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="icon twitter">
+                            <span><a href="#" target="blank"><i class="fa-brands fa-twitter fa-lg"></a></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 address">
+                    <h3>Address</h3>
+                    <p style="margin-top: 25px;">Jl. Sadananya No.21, Maleber, Kec. Ciamis, Kabupaten Ciamis, Jawa Barat
+                        46214</p>
+                    <div class="row contact-us" style="margin-top: 40px;">
+                        <div class="col-1">
+                            <a href=""><i class="fa-sharp fa-solid fa-phone"></i></a>
+                        </div>
+                        <div class="col-11">
+                            <a href="">
+                                <p>
+                                    +62123456789</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row contact-us" style="margin-top: -10px;">
+                        <div class="col-1">
+                            <a href=""><i class="fa-regular fa-envelope"></i></a>
+                        </div>
+                        <div class="col-11">
+                            <a href="">
+                                <p>
+                                    mail@diskspaceid.com</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row contact-us" style="margin-top: -10px;">
+                        <div class="col-1">
+                            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                        <div class="col-11">
+                            <a href="">
+                                <p>
+                                    +62123456789</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 working-hours">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Payment</h3>
+                            <img src="payment/bca.png" alt="" style="width: 75px; height: 70px; margin-left: -10px;">
+                            <img src="payment/bri.png" alt="" style="width: 80px; height: 55px; margin-left: -20px;">
+                            <img src="payment/dana.png" alt="" style="width: 75px; height: 25px; margin-left: -10px;">
+                            <img src="payment/ovo.png" alt=""
+                                style="width: 25px; height: 30px; margin-left: 10px; margin-right: 10px;">
+                            <img src="payment/gopay.png" alt="" style="width: 65px; height: 25px;">
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: -60px;">
+                        <div class="col">
+                            <h3 style="margin-bottom: 20px;">Shipping</h3>
+                            <img src="shipping/anteraja.png" alt="" style="width: 75px; height: 33px;">
+                            <img src="shipping/idexpress.png" alt=""
+                                style="width: 70px; height: 40px; margin-left: -7px;">
+                            <img src="shipping/j&t.png" alt="" style="width: 70px; height: 20px; margin-left: -5px;">
+                            <img src="shipping/jne.png" alt=""
+                                style="width: 50px; height: 20px; margin-left: 10px; margin-right: 10px;">
+                            <img src="shipping/sicepat.png" alt="" style="width: 50px; height: 28px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="container-footer text-center pt-3 pb-3" style="background-color: black; color: #bbb;">
+        Copyright © 2022 diskspaceid. All right reserved.
+    </div>
+    <!-- Akhir Copyright -->
+    <!-- Akhir Footer -->
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
+</body>
+
+</html>
